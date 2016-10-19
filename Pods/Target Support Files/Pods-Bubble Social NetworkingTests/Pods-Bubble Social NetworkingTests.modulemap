@@ -1,0 +1,6 @@
+framework module Pods_Bubble_Social_NetworkingTests {
+  umbrella header "Pods-Bubble Social NetworkingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
