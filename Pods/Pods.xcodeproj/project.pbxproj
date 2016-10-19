@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		692BF0305C083E42E9003EB762343999 /* Pods-Bubble Social NetworkingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F9E67AD60C9806C43D4AD6D93E2000 /* Pods-Bubble Social NetworkingTests-dummy.m */; };
+		752F39399A0374E8991689E2596424BF /* Pods-Bubble Social NetworkingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 695A914DF2B8B38A0B103C7605C356E8 /* Pods-Bubble Social NetworkingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D4E579317885AC6CA8724BDAA7C8564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8A4E642CC02F4878DA159D8433FB03C7 /* Pods-Bubble Social Networking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A8CFD6AA9796C19872D5AC64485DB /* Pods-Bubble Social Networking-dummy.m */; };
+		B541462A856856145D8EB47CC9D30494 /* Pods-Bubble Social NetworkingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AC97B534D16614010F09AA9A539A4 /* Pods-Bubble Social NetworkingUITests-dummy.m */; };
+		C70E64EC2478E41577765A6118E596E7 /* Pods-Bubble Social Networking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 064B280858399099125631A039DE8885 /* Pods-Bubble Social Networking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE2722E4A94DA9A04B39DA230DEBB677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E5B7F5B1A383212296720A632B083ED4 /* Pods-Bubble Social NetworkingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 747AA725C267404CA7093E9ED9BF6443 /* Pods-Bubble Social NetworkingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB6A0554A868A3A496EC0F106A8AB794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01AD4E8AC0688388EEA72E8E975D39A7 /* Pods-Bubble Social NetworkingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bubble Social NetworkingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		03F10EA88AB373ECF1F216F26159D846 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		064B280858399099125631A039DE8885 /* Pods-Bubble Social Networking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Social Networking-umbrella.h"; sourceTree = "<group>"; };
+		06F9099588EED6B9464DD32C031B43A8 /* Pods-Bubble Social NetworkingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social NetworkingTests-frameworks.sh"; sourceTree = "<group>"; };
+		06F9E67AD60C9806C43D4AD6D93E2000 /* Pods-Bubble Social NetworkingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Social NetworkingTests-dummy.m"; sourceTree = "<group>"; };
+		1AA6E5691B4E539E4E6567F197843906 /* Pods_Bubble_Social_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Social_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21844E2736EBF97C43BAD71AA263CBE7 /* Pods-Bubble Social Networking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bubble Social Networking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2832434B11955E1E3643B577E786D820 /* Pods-Bubble Social Networking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social Networking-resources.sh"; sourceTree = "<group>"; };
+		2A32CC5B12023D21658C86146DC3D0FA /* Pods_Bubble_Social_NetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Social_NetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B55578430EB243CBB674C00F13853F3 /* Pods-Bubble Social NetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social NetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56A4FD651DFB01BA3E5B21274AF44666 /* Pods-Bubble Social Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social Networking.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF1C90A1F72AB1534A6A3D586C39C33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647AC97B534D16614010F09AA9A539A4 /* Pods-Bubble Social NetworkingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Social NetworkingUITests-dummy.m"; sourceTree = "<group>"; };
+		667DFC9C3CA7BD538FDCF7C6E44A1C5D /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		695A914DF2B8B38A0B103C7605C356E8 /* Pods-Bubble Social NetworkingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Social NetworkingTests-umbrella.h"; sourceTree = "<group>"; };
+		6AD394DCA02FB1FE4E2E90FB7BF273F8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		70EDCEA4EA5D2A9DD4EFBCA9DBD4F212 /* Pods-Bubble Social Networking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Social Networking.modulemap"; sourceTree = "<group>"; };
+		71C74BEBF58592B916A9DCF666828279 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		747AA725C267404CA7093E9ED9BF6443 /* Pods-Bubble Social NetworkingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bubble Social NetworkingUITests-umbrella.h"; sourceTree = "<group>"; };
+		749137CFCA043BC59ECD865C533633C8 /* Pods-Bubble Social NetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social NetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75B9865F261B7E0F7CA604F67CE99CA9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		769017DD0A11E82ADD431E6CBAC475B9 /* Pods-Bubble Social Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social Networking.release.xcconfig"; sourceTree = "<group>"; };
+		77ABBACDB63A1A4F4E96D73C4EF116A5 /* Pods-Bubble Social NetworkingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Social NetworkingTests.modulemap"; sourceTree = "<group>"; };
+		77C9C34286E4ADC45ECB31CE070FB5E8 /* Pods-Bubble Social NetworkingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bubble Social NetworkingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		843F08F57AE17E2B209D28C24DDA797C /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		853A7225D29401F1913C189FFE1F2832 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A62BB8309EF69352C74056AA7C511635 /* Pods-Bubble Social NetworkingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Bubble Social NetworkingUITests.modulemap"; sourceTree = "<group>"; };
+		A65B80E404A29A3CE49AC3A7C48CC937 /* Pods-Bubble Social NetworkingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bubble Social NetworkingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AFC5789196A5E9AF0B309DE34CE7198D /* Pods-Bubble Social Networking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social Networking-frameworks.sh"; sourceTree = "<group>"; };
+		B38AFC64546F2C693709E36A6A434CB8 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		B5C264F4AB48913C52E203A807F47AE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E7BAAC2DE205A4BA2F370568B42892 /* Pods-Bubble Social NetworkingUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social NetworkingUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BE61252DAE48A1960A15A39254071083 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C9B6C2100709DA677B6B5ABBAC1D74 /* Pods-Bubble Social NetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social NetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD4FC40F6C1361BA64784091BEB48AC9 /* Pods-Bubble Social Networking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bubble Social Networking-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE9A8CFD6AA9796C19872D5AC64485DB /* Pods-Bubble Social Networking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bubble Social Networking-dummy.m"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D56ED780ADBC5788CA821514FBBCAAED /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		D9F8BB89EC1E030F12204A51D039AFD4 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		DE0F29B2CDF5157CB6689A162FA014DD /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		DE75EB25212430477216F64B434EC05B /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		F1D9702DB1126B3D49CC4D596A1C2094 /* Pods-Bubble Social NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bubble Social NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		F22CD01E56AA59B19E3B69580D4E0405 /* Pods-Bubble Social NetworkingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bubble Social NetworkingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F24596095B7506743444E200B417B3DA /* Pods-Bubble Social NetworkingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social NetworkingTests-resources.sh"; sourceTree = "<group>"; };
+		F77CF95C1A1D78EF9D355DD0987625C3 /* Pods_Bubble_Social_NetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Social_NetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE356A5B9B109E708EA2759183E6BACC /* Pods-Bubble Social NetworkingUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bubble Social NetworkingUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D03A0D71BDCE2EB49DDD12A463B045D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2722E4A94DA9A04B39DA230DEBB677 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B8E83CCA32A34D026184D56A56384D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6A0554A868A3A496EC0F106A8AB794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEAC03B76B9796A17255BEFA4899BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4E579317885AC6CA8724BDAA7C8564 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05969CE8C814626DCF7C18FB1EE854FB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE0F29B2CDF5157CB6689A162FA014DD /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		13955296AE2D7922477AB84EAE8A83A2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E59B5A42713D6BC4BB88CEA7CCA4EF92 /* Pods-Bubble Social Networking */,
+				E5840D7E82677B746DC12282DE2D24C8 /* Pods-Bubble Social NetworkingTests */,
+				5319092827EE350A598B1FDC72CBB7D4 /* Pods-Bubble Social NetworkingUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1C4D490A81F158DDAB65E7CC8D90A85F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D56ED780ADBC5788CA821514FBBCAAED /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FABECECE6B18939A36A0C90C111D241 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				A1A30BEF334710E8C6ABEC7DE75E9B61 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		33864FFF651E0EF55A0E9AC7F8E255A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71C74BEBF58592B916A9DCF666828279 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33AD4E002635D77A439F00FC267CF60D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				05969CE8C814626DCF7C18FB1EE854FB /* Core */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		461E182EAF50BF3E14D161601601DFF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AD394DCA02FB1FE4E2E90FB7BF273F8 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51C2AF5031C03E9F970C87F710EA4957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38AFC64546F2C693709E36A6A434CB8 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5319092827EE350A598B1FDC72CBB7D4 /* Pods-Bubble Social NetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1C90A1F72AB1534A6A3D586C39C33 /* Info.plist */,
+				A62BB8309EF69352C74056AA7C511635 /* Pods-Bubble Social NetworkingUITests.modulemap */,
+				F22CD01E56AA59B19E3B69580D4E0405 /* Pods-Bubble Social NetworkingUITests-acknowledgements.markdown */,
+				77C9C34286E4ADC45ECB31CE070FB5E8 /* Pods-Bubble Social NetworkingUITests-acknowledgements.plist */,
+				647AC97B534D16614010F09AA9A539A4 /* Pods-Bubble Social NetworkingUITests-dummy.m */,
+				B6E7BAAC2DE205A4BA2F370568B42892 /* Pods-Bubble Social NetworkingUITests-frameworks.sh */,
+				FE356A5B9B109E708EA2759183E6BACC /* Pods-Bubble Social NetworkingUITests-resources.sh */,
+				747AA725C267404CA7093E9ED9BF6443 /* Pods-Bubble Social NetworkingUITests-umbrella.h */,
+				749137CFCA043BC59ECD865C533633C8 /* Pods-Bubble Social NetworkingUITests.debug.xcconfig */,
+				4B55578430EB243CBB674C00F13853F3 /* Pods-Bubble Social NetworkingUITests.release.xcconfig */,
+			);
+			name = "Pods-Bubble Social NetworkingUITests";
+			path = "Target Support Files/Pods-Bubble Social NetworkingUITests";
+			sourceTree = "<group>";
+		};
+		56DCD628FD16E5E16E59FA494B4D75AA /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				51C2AF5031C03E9F970C87F710EA4957 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		584F196128203ECD401A7FAF9F5EEA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667DFC9C3CA7BD538FDCF7C6E44A1C5D /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		742B07204B882769A21A8F1AABFDC380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843F08F57AE17E2B209D28C24DDA797C /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9060B306DA2FFF9E9431F331F6716F6E /* Pods */,
+				AB196E0F6949F7A4C82934E823112573 /* Products */,
+				13955296AE2D7922477AB84EAE8A83A2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80201464BFA8DA0E3B48C876F406F1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE75EB25212430477216F64B434EC05B /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9060B306DA2FFF9E9431F331F6716F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33AD4E002635D77A439F00FC267CF60D /* Firebase */,
+				56DCD628FD16E5E16E59FA494B4D75AA /* FirebaseAnalytics */,
+				D5F0619D4A07F01C91751B552D91F234 /* FirebaseAuth */,
+				9BE87193F008AF3FAE86C574EC50E8B0 /* FirebaseCore */,
+				2FABECECE6B18939A36A0C90C111D241 /* FirebaseDatabase */,
+				C86FC21F4C24884026C23771428DA03C /* FirebaseInstanceID */,
+				B37586A847B1F296909CF2B55986F2D8 /* FirebaseStorage */,
+				A02112CE2F63A84C041084D28ED2C69B /* GoogleInterchangeUtilities */,
+				FEFA282458228D518E048E72E89AF37C /* GoogleNetworkingUtilities */,
+				A9CF4FC6CB26C05886D6FD55FF95A4EA /* GoogleSymbolUtilities */,
+				9B868F9FEB46D3020035A87F5329FC19 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B868F9FEB46D3020035A87F5329FC19 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C988137323ABA327F03FE45C4CD6A62F /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		9BE87193F008AF3FAE86C574EC50E8B0 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7CC3FE88626C6319416821DD26BC /* Frameworks */,
+			);
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		A02112CE2F63A84C041084D28ED2C69B /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				584F196128203ECD401A7FAF9F5EEA7F /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		A1A30BEF334710E8C6ABEC7DE75E9B61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F8BB89EC1E030F12204A51D039AFD4 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9CF4FC6CB26C05886D6FD55FF95A4EA /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				80201464BFA8DA0E3B48C876F406F1B2 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		AB196E0F6949F7A4C82934E823112573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA6E5691B4E539E4E6567F197843906 /* Pods_Bubble_Social_Networking.framework */,
+				2A32CC5B12023D21658C86146DC3D0FA /* Pods_Bubble_Social_NetworkingTests.framework */,
+				F77CF95C1A1D78EF9D355DD0987625C3 /* Pods_Bubble_Social_NetworkingUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37586A847B1F296909CF2B55986F2D8 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1C4D490A81F158DDAB65E7CC8D90A85F /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C86FC21F4C24884026C23771428DA03C /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				853A7225D29401F1913C189FFE1F2832 /* FIRInstanceID.h */,
+				461E182EAF50BF3E14D161601601DFF0 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		C988137323ABA327F03FE45C4CD6A62F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B9865F261B7E0F7CA604F67CE99CA9 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5F0619D4A07F01C91751B552D91F234 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				742B07204B882769A21A8F1AABFDC380 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		E5840D7E82677B746DC12282DE2D24C8 /* Pods-Bubble Social NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE61252DAE48A1960A15A39254071083 /* Info.plist */,
+				77ABBACDB63A1A4F4E96D73C4EF116A5 /* Pods-Bubble Social NetworkingTests.modulemap */,
+				01AD4E8AC0688388EEA72E8E975D39A7 /* Pods-Bubble Social NetworkingTests-acknowledgements.markdown */,
+				A65B80E404A29A3CE49AC3A7C48CC937 /* Pods-Bubble Social NetworkingTests-acknowledgements.plist */,
+				06F9E67AD60C9806C43D4AD6D93E2000 /* Pods-Bubble Social NetworkingTests-dummy.m */,
+				06F9099588EED6B9464DD32C031B43A8 /* Pods-Bubble Social NetworkingTests-frameworks.sh */,
+				F24596095B7506743444E200B417B3DA /* Pods-Bubble Social NetworkingTests-resources.sh */,
+				695A914DF2B8B38A0B103C7605C356E8 /* Pods-Bubble Social NetworkingTests-umbrella.h */,
+				C5C9B6C2100709DA677B6B5ABBAC1D74 /* Pods-Bubble Social NetworkingTests.debug.xcconfig */,
+				F1D9702DB1126B3D49CC4D596A1C2094 /* Pods-Bubble Social NetworkingTests.release.xcconfig */,
+			);
+			name = "Pods-Bubble Social NetworkingTests";
+			path = "Target Support Files/Pods-Bubble Social NetworkingTests";
+			sourceTree = "<group>";
+		};
+		E59B5A42713D6BC4BB88CEA7CCA4EF92 /* Pods-Bubble Social Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B5C264F4AB48913C52E203A807F47AE1 /* Info.plist */,
+				70EDCEA4EA5D2A9DD4EFBCA9DBD4F212 /* Pods-Bubble Social Networking.modulemap */,
+				21844E2736EBF97C43BAD71AA263CBE7 /* Pods-Bubble Social Networking-acknowledgements.markdown */,
+				CD4FC40F6C1361BA64784091BEB48AC9 /* Pods-Bubble Social Networking-acknowledgements.plist */,
+				CE9A8CFD6AA9796C19872D5AC64485DB /* Pods-Bubble Social Networking-dummy.m */,
+				AFC5789196A5E9AF0B309DE34CE7198D /* Pods-Bubble Social Networking-frameworks.sh */,
+				2832434B11955E1E3643B577E786D820 /* Pods-Bubble Social Networking-resources.sh */,
+				064B280858399099125631A039DE8885 /* Pods-Bubble Social Networking-umbrella.h */,
+				56A4FD651DFB01BA3E5B21274AF44666 /* Pods-Bubble Social Networking.debug.xcconfig */,
+				769017DD0A11E82ADD431E6CBAC475B9 /* Pods-Bubble Social Networking.release.xcconfig */,
+			);
+			name = "Pods-Bubble Social Networking";
+			path = "Target Support Files/Pods-Bubble Social Networking";
+			sourceTree = "<group>";
+		};
+		EF5A7CC3FE88626C6319416821DD26BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F10EA88AB373ECF1F216F26159D846 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFA282458228D518E048E72E89AF37C /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				33864FFF651E0EF55A0E9AC7F8E255A4 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		043BE6E45FE1892728BCFEBF58626711 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752F39399A0374E8991689E2596424BF /* Pods-Bubble Social NetworkingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		549C985C8A584B0D387020F19CB485A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70E64EC2478E41577765A6118E596E7 /* Pods-Bubble Social Networking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D016A1DFA0C198C20A215A24DADA9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B7F5B1A383212296720A632B083ED4 /* Pods-Bubble Social NetworkingUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20E8CB42CE54C756724A1B9F725C5C02 /* Pods-Bubble Social Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045118BFD50910294B5FCCFFDFFD9D66 /* Build configuration list for PBXNativeTarget "Pods-Bubble Social Networking" */;
+			buildPhases = (
+				73F067F4ED808A638B16F9AC222BC0CF /* Sources */,
+				0D03A0D71BDCE2EB49DDD12A463B045D /* Frameworks */,
+				549C985C8A584B0D387020F19CB485A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Social Networking";
+			productName = "Pods-Bubble Social Networking";
+			productReference = 1AA6E5691B4E539E4E6567F197843906 /* Pods_Bubble_Social_Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76ED1D7974BD50627AE577689D15B055 /* Pods-Bubble Social NetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3678E425953F6ADF45B68491553CCA7F /* Build configuration list for PBXNativeTarget "Pods-Bubble Social NetworkingUITests" */;
+			buildPhases = (
+				ECDD553162F78CAF7AE5404DCE8F0336 /* Sources */,
+				46B8E83CCA32A34D026184D56A56384D /* Frameworks */,
+				A0D016A1DFA0C198C20A215A24DADA9B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Social NetworkingUITests";
+			productName = "Pods-Bubble Social NetworkingUITests";
+			productReference = F77CF95C1A1D78EF9D355DD0987625C3 /* Pods_Bubble_Social_NetworkingUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D08B276FF855798E15D18DCAC5DFA65D /* Pods-Bubble Social NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9946E9C714290485A70446A356F8B920 /* Build configuration list for PBXNativeTarget "Pods-Bubble Social NetworkingTests" */;
+			buildPhases = (
+				FA43F8E45DC03F0235CEC501219F3CC2 /* Sources */,
+				9CEAC03B76B9796A17255BEFA4899BFA /* Frameworks */,
+				043BE6E45FE1892728BCFEBF58626711 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bubble Social NetworkingTests";
+			productName = "Pods-Bubble Social NetworkingTests";
+			productReference = 2A32CC5B12023D21658C86146DC3D0FA /* Pods_Bubble_Social_NetworkingTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AB196E0F6949F7A4C82934E823112573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20E8CB42CE54C756724A1B9F725C5C02 /* Pods-Bubble Social Networking */,
+				D08B276FF855798E15D18DCAC5DFA65D /* Pods-Bubble Social NetworkingTests */,
+				76ED1D7974BD50627AE577689D15B055 /* Pods-Bubble Social NetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73F067F4ED808A638B16F9AC222BC0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4E642CC02F4878DA159D8433FB03C7 /* Pods-Bubble Social Networking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDD553162F78CAF7AE5404DCE8F0336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B541462A856856145D8EB47CC9D30494 /* Pods-Bubble Social NetworkingUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43F8E45DC03F0235CEC501219F3CC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692BF0305C083E42E9003EB762343999 /* Pods-Bubble Social NetworkingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03D0A326458F866815A3280BEBABD272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C9B6C2100709DA677B6B5ABBAC1D74 /* Pods-Bubble Social NetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social NetworkingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social NetworkingTests/Pods-Bubble Social NetworkingTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_NetworkingTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EC0D87AD8E24156D108B1AB6CCE8357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 769017DD0A11E82ADD431E6CBAC475B9 /* Pods-Bubble Social Networking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social Networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social Networking/Pods-Bubble Social Networking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_Networking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		703D8A4742641029519B6783D2787CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A4FD651DFB01BA3E5B21274AF44666 /* Pods-Bubble Social Networking.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social Networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social Networking/Pods-Bubble Social Networking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_Networking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		906912A43D9776F294948557C2D92CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B55578430EB243CBB674C00F13853F3 /* Pods-Bubble Social NetworkingUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social NetworkingUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_NetworkingUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E76B2172CF2F8C1AD43A3B7F2BCF2B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D9702DB1126B3D49CC4D596A1C2094 /* Pods-Bubble Social NetworkingTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social NetworkingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social NetworkingTests/Pods-Bubble Social NetworkingTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_NetworkingTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8657D0C966728008FB545F3DE4E31A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749137CFCA043BC59ECD865C533633C8 /* Pods-Bubble Social NetworkingUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Bubble Social NetworkingUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Bubble_Social_NetworkingUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045118BFD50910294B5FCCFFDFFD9D66 /* Build configuration list for PBXNativeTarget "Pods-Bubble Social Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				703D8A4742641029519B6783D2787CBA /* Debug */,
+				0EC0D87AD8E24156D108B1AB6CCE8357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3678E425953F6ADF45B68491553CCA7F /* Build configuration list for PBXNativeTarget "Pods-Bubble Social NetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8657D0C966728008FB545F3DE4E31A7 /* Debug */,
+				906912A43D9776F294948557C2D92CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9946E9C714290485A70446A356F8B920 /* Build configuration list for PBXNativeTarget "Pods-Bubble Social NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D0A326458F866815A3280BEBABD272 /* Debug */,
+				E76B2172CF2F8C1AD43A3B7F2BCF2B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

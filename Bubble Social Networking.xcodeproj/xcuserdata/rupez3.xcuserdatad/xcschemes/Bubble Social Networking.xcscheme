@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0688A0021DB5C0C8004E8911"
+               BuildableName = "Bubble Social Networking.app"
+               BlueprintName = "Bubble Social Networking"
+               ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0688A0161DB5C0C8004E8911"
+               BuildableName = "Bubble Social NetworkingTests.xctest"
+               BlueprintName = "Bubble Social NetworkingTests"
+               ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0688A0211DB5C0C8004E8911"
+               BuildableName = "Bubble Social NetworkingUITests.xctest"
+               BlueprintName = "Bubble Social NetworkingUITests"
+               ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0688A0021DB5C0C8004E8911"
+            BuildableName = "Bubble Social Networking.app"
+            BlueprintName = "Bubble Social Networking"
+            ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0688A0021DB5C0C8004E8911"
+            BuildableName = "Bubble Social Networking.app"
+            BlueprintName = "Bubble Social Networking"
+            ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0688A0021DB5C0C8004E8911"
+            BuildableName = "Bubble Social Networking.app"
+            BlueprintName = "Bubble Social Networking"
+            ReferencedContainer = "container:Bubble Social Networking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
