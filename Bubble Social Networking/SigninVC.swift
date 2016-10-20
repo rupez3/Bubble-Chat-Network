@@ -28,7 +28,7 @@ class SigninVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func facebookAction(_ sender: AnyObject) {
+    @IBAction func facebookAction(_ sender: UIButton) {
         
         let fbLogin = FBSDKLoginManager()
         fbLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
@@ -46,7 +46,7 @@ class SigninVC: UIViewController {
         }
     }
     
-    @IBAction func signInAction(_ sender: AnyObject) {
+    @IBAction func signInAction(_ sender: UIButton) {
         
         if let email = emailField.text, let pwd = passwordField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
