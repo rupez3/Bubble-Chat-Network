@@ -83,6 +83,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="0.0" alpha="0.83446937919463082" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gmz-de-jaD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -110,10 +113,14 @@
                             <constraint firstItem="YXK-a4-dtS" firstAttribute="top" secondItem="qKs-S8-L6a" secondAttribute="bottom" constant="59" id="wdN-GR-8UZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="4V8-k3-Sd1" id="j2k-2j-YEo"/>
+                        <outlet property="passwordField" destination="etP-kH-XFH" id="MRr-A9-l9b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-52" y="125"/>
         </scene>
     </scenes>
     <resources>

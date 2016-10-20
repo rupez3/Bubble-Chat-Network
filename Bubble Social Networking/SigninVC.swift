@@ -13,9 +13,14 @@ import FBSDKLoginKit
 
 class SigninVC: UIViewController {
 
+    @IBOutlet weak var emailField: CustomTextField!
+    @IBOutlet weak var passwordField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.passwordField.isSecureTextEntry = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +28,7 @@ class SigninVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func facebookAction(_ sender: AnyObject) {
+    @IBAction func facebookAction(_ sender: UIButton) {
         
         let fbLogin = FBSDKLoginManager()
         fbLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
@@ -38,6 +43,25 @@ class SigninVC: UIViewController {
                 
                 self.firebaseAuth(credential)
             }
+        }
+    }
+    
+    @IBAction func signInAction(_ sender: UIButton) {
+        
+        if let email = emailField.text, let pwd = passwordField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("rkc: firebase login with email successful")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("rkc: firebase email login failed")
+                        } else {
+                            print("rkc: firebase email account created")
+                        }
+                    })
+                }
+            })
         }
     }
     
