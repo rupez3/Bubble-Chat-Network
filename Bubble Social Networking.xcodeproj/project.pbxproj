@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064375521DB837F00077744B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064375511DB837F00077744B /* CustomView.swift */; };
+		064375551DB838520077744B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064375541DB838520077744B /* Constants.swift */; };
+		064375571DB83EA70077744B /* CustomRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064375561DB83EA70077744B /* CustomRoundButton.swift */; };
+		064375591DB842360077744B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064375581DB842360077744B /* CustomTextField.swift */; };
+		0643755B1DB844AE0077744B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643755A1DB844AE0077744B /* CustomButton.swift */; };
 		0688A0071DB5C0C8004E8911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688A0061DB5C0C8004E8911 /* AppDelegate.swift */; };
 		0688A0091DB5C0C8004E8911 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688A0081DB5C0C8004E8911 /* SigninVC.swift */; };
 		0688A00C1DB5C0C8004E8911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0688A00A1DB5C0C8004E8911 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064375511DB837F00077744B /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		064375541DB838520077744B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		064375561DB83EA70077744B /* CustomRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundButton.swift; sourceTree = "<group>"; };
+		064375581DB842360077744B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0643755A1DB844AE0077744B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0688A0031DB5C0C8004E8911 /* Bubble Social Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bubble Social Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0688A0061DB5C0C8004E8911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0688A0081DB5C0C8004E8911 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -93,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064375531DB8383E0077744B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				064375541DB838520077744B /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		06889FFA1DB5C0C8004E8911 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +136,7 @@
 		0688A0051DB5C0C8004E8911 /* Bubble Social Networking */ = {
 			isa = PBXGroup;
 			children = (
+				064375531DB8383E0077744B /* Util */,
 				0688A0381DB5C121004E8911 /* Model */,
 				0688A03A1DB5C132004E8911 /* Controller */,
 				0688A0391DB5C129004E8911 /* View */,
@@ -159,6 +178,10 @@
 		0688A0391DB5C129004E8911 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				064375511DB837F00077744B /* CustomView.swift */,
+				064375561DB83EA70077744B /* CustomRoundButton.swift */,
+				064375581DB842360077744B /* CustomTextField.swift */,
+				0643755A1DB844AE0077744B /* CustomButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -465,8 +488,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064375521DB837F00077744B /* CustomView.swift in Sources */,
 				0688A0091DB5C0C8004E8911 /* SigninVC.swift in Sources */,
+				064375591DB842360077744B /* CustomTextField.swift in Sources */,
 				0688A0071DB5C0C8004E8911 /* AppDelegate.swift in Sources */,
+				0643755B1DB844AE0077744B /* CustomButton.swift in Sources */,
+				064375571DB83EA70077744B /* CustomRoundButton.swift in Sources */,
+				064375551DB838520077744B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
