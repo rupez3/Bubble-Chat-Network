@@ -20,8 +20,6 @@
 		0688A01C1DB5C0C8004E8911 /* Bubble_Social_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688A01B1DB5C0C8004E8911 /* Bubble_Social_NetworkingTests.swift */; };
 		0688A0271DB5C0C8004E8911 /* Bubble_Social_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688A0261DB5C0C8004E8911 /* Bubble_Social_NetworkingUITests.swift */; };
 		0688A0351DB5C11B004E8911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0688A0341DB5C11B004E8911 /* GoogleService-Info.plist */; };
-		0688A0361DB5C11B004E8911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0688A0341DB5C11B004E8911 /* GoogleService-Info.plist */; };
-		0688A0371DB5C11B004E8911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0688A0341DB5C11B004E8911 /* GoogleService-Info.plist */; };
 		358DFEF90D16B7D9E63F534B /* Pods_Bubble_Social_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907DC198ACD474F8E4471943 /* Pods_Bubble_Social_NetworkingTests.framework */; };
 		5D797EA142EF8266412D99FC /* Pods_Bubble_Social_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82841C2743F7DC6B7E60286 /* Pods_Bubble_Social_Networking.framework */; };
 		83007505FB1F15641206F1D1 /* Pods_Bubble_Social_NetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF68645CC7BC936A38C70C7C /* Pods_Bubble_Social_NetworkingUITests.framework */; };
@@ -296,6 +294,7 @@
 					0688A0021DB5C0C8004E8911 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VYF73LXG77;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -306,12 +305,14 @@
 					0688A0161DB5C0C8004E8911 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VYF73LXG77;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0688A0021DB5C0C8004E8911;
 					};
 					0688A0211DB5C0C8004E8911 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = VYF73LXG77;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0688A0021DB5C0C8004E8911;
 					};
@@ -353,7 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0688A0361DB5C11B004E8911 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +361,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0688A0371DB5C11B004E8911 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
