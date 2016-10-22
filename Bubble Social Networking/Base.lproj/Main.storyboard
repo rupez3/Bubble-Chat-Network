@@ -113,14 +113,85 @@
                             <constraint firstItem="YXK-a4-dtS" firstAttribute="top" secondItem="qKs-S8-L6a" secondAttribute="bottom" constant="59" id="wdN-GR-8UZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UUl-yH-WyJ"/>
                     <connections>
                         <outlet property="emailField" destination="4V8-k3-Sd1" id="j2k-2j-YEo"/>
                         <outlet property="passwordField" destination="etP-kH-XFH" id="MRr-A9-l9b"/>
+                        <segue destination="t7a-6m-W1M" kind="show" identifier="goToFeed" id="Mh7-8R-Jgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="125"/>
+            <point key="canvasLocation" x="-962" y="94"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="NSG-Oj-SXa">
+            <objects>
+                <viewController title="Message" id="AbO-43-b3X" customClass="MessagingVC" customModule="Bubble_Social_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fec-vm-Glh"/>
+                        <viewControllerLayoutGuide type="bottom" id="FD8-di-Ba9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vd3-Wu-hsu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-yn-p5w">
+                                <state key="normal" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="AbO-43-b3X" eventType="touchUpInside" id="20C-bZ-Ku3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="j0F-jX-tL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ume-yn-p5w" firstAttribute="centerX" secondItem="Vd3-Wu-hsu" secondAttribute="centerX" id="E8O-Ij-Nih"/>
+                            <constraint firstItem="Ume-yn-p5w" firstAttribute="centerY" secondItem="Vd3-Wu-hsu" secondAttribute="centerY" id="WbX-V8-zgn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MESSAGE" id="Bbb-hn-7WI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7l-46-8ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="427"/>
+        </scene>
+        <!--Feeds-->
+        <scene sceneID="sCB-hR-ZAF">
+            <objects>
+                <viewController title="Feeds" id="We9-oe-R8J" customClass="FeedsVC" customModule="Bubble_Social_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xbp-dh-CLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tm4-yn-elj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sce-53-7GD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FEEDS" id="lEu-fw-HNH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su3-aS-EbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="-229"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="062-RM-oiG">
+            <objects>
+                <tabBarController id="t7a-6m-W1M" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KT0-zK-peL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="We9-oe-R8J" kind="relationship" relationship="viewControllers" id="Mga-4e-l9c"/>
+                        <segue destination="AbO-43-b3X" kind="relationship" relationship="viewControllers" id="6OL-0r-8gE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qJ-zG-pmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89" y="93"/>
         </scene>
     </scenes>
     <resources>
