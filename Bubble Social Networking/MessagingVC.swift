@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import SwiftKeychainWrapper
 
 class MessagingVC: UIViewController {
 
@@ -14,17 +16,21 @@ class MessagingVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func logoutAction(_ sender: UIButton) {
+        
+        KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch {
+            }
+        self.performSegue(withIdentifier: "goToLogin", sender: nil)
     }
     
 

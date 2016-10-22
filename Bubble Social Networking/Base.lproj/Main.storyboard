@@ -117,107 +117,81 @@
                     <connections>
                         <outlet property="emailField" destination="4V8-k3-Sd1" id="j2k-2j-YEo"/>
                         <outlet property="passwordField" destination="etP-kH-XFH" id="MRr-A9-l9b"/>
-                        <segue destination="f2C-LM-HVf" kind="show" identifier="goToFeed" id="w3B-Xe-TAt"/>
+                        <segue destination="t7a-6m-W1M" kind="show" identifier="goToFeed" id="Mh7-8R-Jgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="125"/>
+            <point key="canvasLocation" x="-962" y="94"/>
         </scene>
         <!--Message-->
-        <scene sceneID="9e5-Tu-4Ct">
+        <scene sceneID="NSG-Oj-SXa">
             <objects>
-                <viewController id="b1v-kF-NeB" sceneMemberID="viewController">
+                <viewController title="Message" id="AbO-43-b3X" customClass="MessagingVC" customModule="Bubble_Social_Networking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GtN-FD-7YU"/>
-                        <viewControllerLayoutGuide type="bottom" id="GFO-nD-Vj9"/>
+                        <viewControllerLayoutGuide type="top" id="Fec-vm-Glh"/>
+                        <viewControllerLayoutGuide type="bottom" id="FD8-di-Ba9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eJa-ZO-BIG">
+                    <view key="view" contentMode="scaleToFill" id="Vd3-Wu-hsu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-yn-p5w">
+                                <state key="normal" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="AbO-43-b3X" eventType="touchUpInside" id="20C-bZ-Ku3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="j0F-jX-tL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ume-yn-p5w" firstAttribute="centerX" secondItem="Vd3-Wu-hsu" secondAttribute="centerX" id="E8O-Ij-Nih"/>
+                            <constraint firstItem="Ume-yn-p5w" firstAttribute="centerY" secondItem="Vd3-Wu-hsu" secondAttribute="centerY" id="WbX-V8-zgn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Message" id="U4m-Mv-jc2"/>
+                    <tabBarItem key="tabBarItem" title="MESSAGE" id="Bbb-hn-7WI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3iX-yb-szC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7l-46-8ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2656.8000000000002" y="451.12443778110946"/>
+            <point key="canvasLocation" x="861" y="427"/>
         </scene>
         <!--Feeds-->
-        <scene sceneID="AeP-WB-knm">
+        <scene sceneID="sCB-hR-ZAF">
             <objects>
-                <viewController id="ivk-rT-nvc" customClass="FeedsVC" customModule="Bubble_Social_Networking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feeds" id="We9-oe-R8J" customClass="FeedsVC" customModule="Bubble_Social_Networking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aLl-TY-dcz"/>
-                        <viewControllerLayoutGuide type="bottom" id="B38-cM-25i"/>
+                        <viewControllerLayoutGuide type="top" id="Xbp-dh-CLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tm4-yn-elj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Mz4-7B-0Bk">
+                    <view key="view" contentMode="scaleToFill" id="sce-53-7GD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Feeds" id="43g-p0-vVi"/>
+                    <tabBarItem key="tabBarItem" title="FEEDS" id="lEu-fw-HNH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="22T-S4-Yb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su3-aS-EbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2656.8000000000002" y="-203.74812593703149"/>
+            <point key="canvasLocation" x="861" y="-229"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="KJF-ih-peM">
+        <scene sceneID="062-RM-oiG">
             <objects>
-                <tabBarController id="f2C-LM-HVf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="O4d-Gg-0j9"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="T1C-1r-Aoq">
+                <tabBarController id="t7a-6m-W1M" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KT0-zK-peL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="LXx-dE-AXo" kind="relationship" relationship="viewControllers" id="n9A-hw-pE8"/>
-                        <segue destination="w6j-up-l4Z" kind="relationship" relationship="viewControllers" id="4QE-Tm-hvl"/>
+                        <segue destination="We9-oe-R8J" kind="relationship" relationship="viewControllers" id="Mga-4e-l9c"/>
+                        <segue destination="AbO-43-b3X" kind="relationship" relationship="viewControllers" id="6OL-0r-8gE"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g9q-IB-9dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qJ-zG-pmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="125"/>
-        </scene>
-        <!--Feeds-->
-        <scene sceneID="LOT-zy-eQK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LXx-dE-AXo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feeds" id="SPo-Ih-qkh"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zUn-q9-Seb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ivk-rT-nvc" kind="relationship" relationship="rootViewController" id="esa-m7-8xJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qux-1n-AwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1717.5999999999999" y="-203.74812593703149"/>
-        </scene>
-        <!--Message-->
-        <scene sceneID="RXw-QV-IhM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6j-up-l4Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Message" id="NTj-dT-Ui7"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uOJ-vu-KM0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="b1v-kF-NeB" kind="relationship" relationship="rootViewController" id="BeW-sP-Zsy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="804-jY-Ahk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1717.5999999999999" y="451.12443778110946"/>
+            <point key="canvasLocation" x="-89" y="93"/>
         </scene>
     </scenes>
     <resources>
