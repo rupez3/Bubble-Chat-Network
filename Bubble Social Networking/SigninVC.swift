@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import SwiftKeychainWrapper
 
-class SigninVC: UIViewController {
+class SigninVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: CustomTextField!
     @IBOutlet weak var passwordField: CustomTextField!
@@ -22,6 +22,7 @@ class SigninVC: UIViewController {
 
         self.passwordField.isSecureTextEntry = true
 //        self.navigationController?.isNavigationBarHidden = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -99,6 +100,19 @@ class SigninVC: UIViewController {
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         
         performSegue(withIdentifier: "goToFeed", sender: self)
+    }
+    
+    //This is for the keyboard to GO AWAYY !! when user clicks anywhere on the view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    //This is for the keyboard to GO AWAYY !! when user clicks "Return" key  on the keyboard
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 }
