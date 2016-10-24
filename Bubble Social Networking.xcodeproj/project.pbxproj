@@ -23,10 +23,12 @@
 		358DFEF90D16B7D9E63F534B /* Pods_Bubble_Social_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907DC198ACD474F8E4471943 /* Pods_Bubble_Social_NetworkingTests.framework */; };
 		5D797EA142EF8266412D99FC /* Pods_Bubble_Social_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82841C2743F7DC6B7E60286 /* Pods_Bubble_Social_Networking.framework */; };
 		83007505FB1F15641206F1D1 /* Pods_Bubble_Social_NetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF68645CC7BC936A38C70C7C /* Pods_Bubble_Social_NetworkingUITests.framework */; };
+		A51D77381DBDBE5400392E86 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D77371DBDBE5400392E86 /* CircleImageView.swift */; };
 		A565DA0E1DB9BA8A0013C543 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA0D1DB9BA8A0013C543 /* TabBarViewController.swift */; };
 		A565DA101DB9BAA50013C543 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */; };
 		A565DA121DB9BABA0013C543 /* FeedsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA111DB9BABA0013C543 /* FeedsVC.swift */; };
 		A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA131DB9BAD20013C543 /* MessagingVC.swift */; };
+		A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +71,12 @@
 		7C21D284E6FE4E0BEDEE5FE6 /* Pods-Bubble Social NetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social NetworkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		907DC198ACD474F8E4471943 /* Pods_Bubble_Social_NetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubble_Social_NetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931617F008BB8C2D36F2CCB4 /* Pods-Bubble Social NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social NetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social NetworkingTests/Pods-Bubble Social NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		A51D77371DBDBE5400392E86 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		A565DA0D1DB9BA8A0013C543 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		A565DA111DB9BABA0013C543 /* FeedsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsVC.swift; sourceTree = "<group>"; };
 		A565DA131DB9BAD20013C543 /* MessagingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingVC.swift; sourceTree = "<group>"; };
+		A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		A5DAD4D41DB86FA900F55C0E /* Bubble Social Networking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bubble Social Networking.entitlements"; sourceTree = "<group>"; };
 		A6CDDFFD1AF88864AFEA18BE /* Pods-Bubble Social NetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social NetworkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE68F9788A99FABE22BEE522 /* Pods-Bubble Social Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social Networking/Pods-Bubble Social Networking.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				064375561DB83EA70077744B /* CustomRoundButton.swift */,
 				064375581DB842360077744B /* CustomTextField.swift */,
 				0643755A1DB844AE0077744B /* CustomButton.swift */,
+				A51D77371DBDBE5400392E86 /* CircleImageView.swift */,
+				A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -506,7 +512,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51D77381DBDBE5400392E86 /* CircleImageView.swift in Sources */,
 				A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */,
+				A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */,
 				A565DA0E1DB9BA8A0013C543 /* TabBarViewController.swift in Sources */,
 				064375521DB837F00077744B /* CustomView.swift in Sources */,
 				0688A0091DB5C0C8004E8911 /* SigninVC.swift in Sources */,

@@ -1,14 +1,14 @@
 //
-//  CustomView.swift
+//  CircleImageView.swift
 //  Bubble Social Networking
 //
-//  Created by Rupesh  on 10/19/16.
+//  Created by Chhetri, Rupesh (Contractor) on 10/23/16.
 //  Copyright © 2016 RupeshChhetri. All rights reserved.
 //
 
 import UIKit
 
-class CustomView: UIView {
+class CircleImageView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,14 +17,15 @@ class CustomView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
     }
-    */
-
+    
+//    override func draw(_ rect: CGRect) {
+//        super.draw(rect)
+//        layer.cornerRadius = self.frame.width / 2
+//    }
 }
