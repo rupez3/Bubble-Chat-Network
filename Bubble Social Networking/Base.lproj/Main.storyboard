@@ -170,12 +170,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfF-ng-cZF" customClass="CustomView" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-g8-cTI" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-g8-cTI" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="UEd-Cf-5iB"/>
                                             <constraint firstAttribute="height" constant="30" id="tSr-zS-2mX"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UT2-jG-2dn" appends="YES" id="74L-KI-c5J"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-04-60u">
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -343,6 +347,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su3-aS-EbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UT2-jG-2dn"/>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="-226.23688155922042"/>
         </scene>

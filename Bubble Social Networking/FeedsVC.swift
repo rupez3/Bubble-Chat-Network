@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
+import FirebaseAuth
 
 class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -40,15 +42,14 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return myTableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
     }
     
+//    @IBAction func logoutAction(_ sender: AnyObject) {
+//        
+//        KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+//        
+//        try! FIRAuth.auth()?.signOut()
+//        
+//        self.performSegue(withIdentifier: "goToLogin", sender: nil)
+//    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

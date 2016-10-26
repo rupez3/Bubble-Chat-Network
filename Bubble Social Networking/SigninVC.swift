@@ -57,6 +57,21 @@ class SigninVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func firebaseAuth(_ credential: FIRAuthCredential) {
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                print("rkc: Firebase Auhentication Failed")
+            } else {
+                print("rkc: Firebase Authenication Successful")
+                if let user = user {
+                    let userData = ["provider": credential.provider]
+                    
+                    self.completeSignIn(id: user.uid, userData: userData)
+                }
+            }
+        })
+    }
+    
     @IBAction func signInAction(_ sender: UIButton) {
         
         if let email = emailField.text, let pwd = passwordField.text {
@@ -64,7 +79,10 @@ class SigninVC: UIViewController, UITextFieldDelegate {
                 if error == nil {
                     print("rkc: firebase login with email successful")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        
+                        self.completeSignIn(id: user.uid, userData: userData)
+
                     }
                     
                 } else {
@@ -74,7 +92,9 @@ class SigninVC: UIViewController, UITextFieldDelegate {
                         } else {
                             print("rkc: firebase email account created")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -83,20 +103,8 @@ class SigninVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func firebaseAuth(_ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
-            if error != nil {
-                print("rkc: Firebase Auhentication Failed")
-            } else {
-                print("rkc: Firebase Authenication Successful")
-                if let user = user {
-                    self.completeSignIn(id: user.uid)
-                }
-            }
-        })
-    }
-    
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         
         performSegue(withIdentifier: "goToFeed", sender: self)

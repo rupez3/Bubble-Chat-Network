@@ -28,6 +28,7 @@
 		A565DA101DB9BAA50013C543 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */; };
 		A565DA121DB9BABA0013C543 /* FeedsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA111DB9BABA0013C543 /* FeedsVC.swift */; };
 		A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA131DB9BAD20013C543 /* MessagingVC.swift */; };
+		A59A7BDF1DC018DC008CFABC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A7BDE1DC018DC008CFABC /* DataService.swift */; };
 		A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		A565DA111DB9BABA0013C543 /* FeedsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsVC.swift; sourceTree = "<group>"; };
 		A565DA131DB9BAD20013C543 /* MessagingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingVC.swift; sourceTree = "<group>"; };
+		A59A7BDE1DC018DC008CFABC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		A5DAD4D41DB86FA900F55C0E /* Bubble Social Networking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bubble Social Networking.entitlements"; sourceTree = "<group>"; };
 		A6CDDFFD1AF88864AFEA18BE /* Pods-Bubble Social NetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social NetworkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		0688A0051DB5C0C8004E8911 /* Bubble Social Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A59A7BDD1DC018C7008CFABC /* Services */,
 				A5DAD4D41DB86FA900F55C0E /* Bubble Social Networking.entitlements */,
 				064375531DB8383E0077744B /* Util */,
 				0688A0381DB5C121004E8911 /* Model */,
@@ -233,6 +236,14 @@
 				BF68645CC7BC936A38C70C7C /* Pods_Bubble_Social_NetworkingUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A59A7BDD1DC018C7008CFABC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A59A7BDE1DC018DC008CFABC /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51D77381DBDBE5400392E86 /* CircleImageView.swift in Sources */,
+				A59A7BDF1DC018DC008CFABC /* DataService.swift in Sources */,
 				A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */,
 				A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */,
 				A565DA0E1DB9BA8A0013C543 /* TabBarViewController.swift in Sources */,
