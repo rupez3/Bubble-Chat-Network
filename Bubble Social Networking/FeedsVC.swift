@@ -21,6 +21,10 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
         
+        DataService.ds.REF_POSTS.observe(.value, with: {(snapshot) in
+            print(snapshot.value)  
+        })
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
