@@ -170,8 +170,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfF-ng-cZF" customClass="CustomView" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-g8-cTI" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
-                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-04-60u">
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-g8-cTI" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="UEd-Cf-5iB"/>
@@ -181,27 +186,22 @@
                                             <outletCollection property="gestureRecognizers" destination="UT2-jG-2dn" appends="YES" id="74L-KI-c5J"/>
                                         </connections>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-04-60u">
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="5Dq-g8-cTI" firstAttribute="leading" secondItem="ZfF-ng-cZF" secondAttribute="leading" constant="8" id="BFC-Nl-b64"/>
                                     <constraint firstAttribute="height" constant="65" id="Idz-CC-xz3"/>
                                     <constraint firstItem="c3Y-04-60u" firstAttribute="centerX" secondItem="ZfF-ng-cZF" secondAttribute="centerX" id="JSN-oA-ZAM"/>
-                                    <constraint firstItem="5Dq-g8-cTI" firstAttribute="top" secondItem="ZfF-ng-cZF" secondAttribute="top" constant="20" id="LY9-2S-Tfg"/>
-                                    <constraint firstItem="c3Y-04-60u" firstAttribute="centerY" secondItem="ZfF-ng-cZF" secondAttribute="centerY" id="mng-6e-YCe"/>
+                                    <constraint firstItem="5Dq-g8-cTI" firstAttribute="top" secondItem="ZfF-ng-cZF" secondAttribute="top" constant="26" id="LY9-2S-Tfg"/>
+                                    <constraint firstItem="c3Y-04-60u" firstAttribute="centerY" secondItem="ZfF-ng-cZF" secondAttribute="centerY" constant="8.25" id="mng-6e-YCe"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-Gh-Syf" customClass="CustomView" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-b1-Vnw">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-aG-8d1" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
-                                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-aG-8d1" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="LLy-xe-Nbv"/>
                                                     <constraint firstAttribute="width" constant="49" id="XLE-jM-YXL"/>
@@ -213,16 +213,17 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wir-09-kGY" customClass="CustomRoundButton" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="GXK-gt-E9w"/>
                                                     <constraint firstAttribute="width" constant="49" id="MWF-VX-gZZ"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="fbLogo"/>
+                                                <state key="normal" title="Button" image="add-post"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="UxX-b1-Vnw" secondAttribute="bottom" constant="8" id="9Ph-jj-OG6"/>
                                     <constraint firstAttribute="trailing" secondItem="UxX-b1-Vnw" secondAttribute="trailing" constant="8" id="Cih-lz-AWz"/>
@@ -247,8 +248,8 @@
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ1-2d-80Z">
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-f8-eee" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
-                                                                            <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cersie" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-f8-eee" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="aTX-QP-9wb"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="oPp-Va-2uy"/>
@@ -259,8 +260,8 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-rm-VlZ">
-                                                                            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-rm-VlZ">
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="7PU-PT-uyi"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="Bjf-Lq-P4t"/>
@@ -268,7 +269,7 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9F-Wo-mRJ">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="w9F-Wo-mRJ">
                                                                     <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-ny-bnZ">
@@ -276,7 +277,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="80" id="hn2-GS-dak"/>
                                                                     </constraints>
-                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -372,6 +373,12 @@
     </scenes>
     <resources>
         <image name="acctLogo" width="300" height="145"/>
+        <image name="add-image" width="88" height="88"/>
+        <image name="add-post" width="88" height="88"/>
+        <image name="cersie" width="502" height="360"/>
+        <image name="empty-heart" width="70" height="70"/>
         <image name="fbLogo" width="139" height="139"/>
+        <image name="flower" width="600" height="332"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
