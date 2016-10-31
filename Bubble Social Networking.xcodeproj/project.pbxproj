@@ -28,6 +28,7 @@
 		A565DA101DB9BAA50013C543 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */; };
 		A565DA121DB9BABA0013C543 /* FeedsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA111DB9BABA0013C543 /* FeedsVC.swift */; };
 		A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565DA131DB9BAD20013C543 /* MessagingVC.swift */; };
+		A594311C1DC806DF00F4F600 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A594311B1DC806DF00F4F600 /* PostModel.swift */; };
 		A59A7BDF1DC018DC008CFABC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A7BDE1DC018DC008CFABC /* DataService.swift */; };
 		A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		A565DA0F1DB9BAA50013C543 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		A565DA111DB9BABA0013C543 /* FeedsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsVC.swift; sourceTree = "<group>"; };
 		A565DA131DB9BAD20013C543 /* MessagingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingVC.swift; sourceTree = "<group>"; };
+		A594311B1DC806DF00F4F600 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		A59A7BDE1DC018DC008CFABC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		A5DAD4D41DB86FA900F55C0E /* Bubble Social Networking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bubble Social Networking.entitlements"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		0688A0381DB5C121004E8911 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A594311B1DC806DF00F4F600 /* PostModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51D77381DBDBE5400392E86 /* CircleImageView.swift in Sources */,
+				A594311C1DC806DF00F4F600 /* PostModel.swift in Sources */,
 				A59A7BDF1DC018DC008CFABC /* DataService.swift in Sources */,
 				A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */,
 				A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */,
