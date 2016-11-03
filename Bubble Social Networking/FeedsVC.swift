@@ -61,8 +61,12 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let post = posts[indexPath.row]
         print(post)
-        
-        return myTableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as? PostTableViewCell {
+            cell.configCell(post: post)
+            return cell
+        } else {
+            return PostTableViewCell()
+        }
     }
     
 //    @IBAction func logoutAction(_ sender: AnyObject) {
