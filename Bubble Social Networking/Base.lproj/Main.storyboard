@@ -200,12 +200,16 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-b1-Vnw">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-aG-8d1" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-aG-8d1" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="LLy-xe-Nbv"/>
                                                     <constraint firstAttribute="width" constant="49" id="XLE-jM-YXL"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rGc-3e-i45" appends="YES" id="vHH-Fk-4iG"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add a caption..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1se-9N-xPl" customClass="CustomTextField" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                                 <nil key="textColor"/>
@@ -257,7 +261,7 @@
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rck1990" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITy-di-g1t">
                                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="qDN-rm-VlZ">
@@ -344,11 +348,21 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="FEEDS" id="lEu-fw-HNH"/>
                     <connections>
+                        <outlet property="addImageOutlet" destination="NSr-aG-8d1" id="tI7-1z-mcF"/>
                         <outlet property="myTableView" destination="LVS-GJ-zAl" id="ZKU-OO-ZIR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su3-aS-EbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UT2-jG-2dn"/>
+                <tapGestureRecognizer id="UT2-jG-2dn">
+                    <connections>
+                        <action selector="logoutAction:" destination="We9-oe-R8J" id="Pf9-lE-0tT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rGc-3e-i45">
+                    <connections>
+                        <action selector="addImageAction:" destination="We9-oe-R8J" id="Se8-DA-oT4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="-226.23688155922042"/>
         </scene>
