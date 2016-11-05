@@ -16,6 +16,8 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
     var imagePicker: UIImagePickerController!
     var posts = [PostModel]()
     
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    
     @IBOutlet weak var myTableView: UITableView!
     
     override func viewDidLoad() {
@@ -69,8 +71,15 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
         let post = posts[indexPath.row]
         print(post)
         if let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as? PostTableViewCell {
-            cell.configCell(post: post)
-            return cell
+            
+            if let img = FeedsVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configCell(post: post, image: img)
+                return cell
+            } else {
+                cell.configCell(post: post)
+                return cell
+            }
+            
         } else {
             return PostTableViewCell()
         }
