@@ -10,8 +10,10 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
-class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var addImageOutlet: CircleImageView!
+    var imagePicker: UIImagePickerController!
     var posts = [PostModel]()
     
     @IBOutlet weak var myTableView: UITableView!
@@ -22,6 +24,11 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
+        
+        //image picker intializer
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         ///Listener
         DataService.ds.REF_POSTS.observe(.value, with: {(snapshot) in
@@ -69,14 +76,29 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-//    @IBAction func logoutAction(_ sender: AnyObject) {
-//        
-//        KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-//        
-//        try! FIRAuth.auth()?.signOut()
-//        
-//        self.performSegue(withIdentifier: "goToLogin", sender: nil)
-//    }
+    @IBAction func logoutAction(_ sender: AnyObject) {
+        
+        KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        
+        try! FIRAuth.auth()?.signOut()
+        
+        self.performSegue(withIdentifier: "goToLogin", sender: nil)
+    }
 
+    ///IMAGE PICKER
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            addImageOutlet.image = image
+        } else {
+            print("rkc: image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func addImageAction(_ sender: AnyObject) {
+        
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
 }
