@@ -22,6 +22,7 @@ class PostTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.caption.isEditable = false
     }
 
     func configCell(post: PostModel, image: UIImage? = nil) {
