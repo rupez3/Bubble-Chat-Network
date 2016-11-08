@@ -137,10 +137,28 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
                 } else {
                     print("rkc: image was successfully uploaded to firebase")
                     let downloadUrl = metaData?.downloadURL()?.absoluteString
-                    
+                    if let url = downloadUrl {
+                        self.postToFirebase(imageUrl: url)
+                    }
                 }
             })
         }
+    }
+    
+    func postToFirebase(imageUrl: String) {
+        let post: Dictionary<String, Any> = [
+            "caption": addCaption.text!,
+            "imageUrl": imageUrl,
+            "likes": 0 as NSNumber
+        ]
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        addCaption.text = ""
+        imageSelected = false
+        addImageOutlet.image = UIImage(named: "add-image")
+        
+        myTableView.reloadData()
     }
     
     ////Temp code
