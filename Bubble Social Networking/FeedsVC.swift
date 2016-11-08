@@ -38,6 +38,7 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
         ///Listener
         DataService.ds.REF_POSTS.observe(.value, with: {(snapshot) in
             //print(snapshot.value)
+            self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshots {
                     print(snap)
@@ -131,6 +132,7 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
             let imageUid = NSUUID().uuidString
             let metaData = FIRStorageMetadata()
             metaData.contentType = "image/jpeg"
+            
             DataService.ds.REF_POST_IMAGES.child(imageUid).put(imageData, metadata: metaData, completion: { (metaData, error) in
                 if error != nil {
                     print("rkc: unable to upload image")
@@ -146,10 +148,10 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
     }
     
     func postToFirebase(imageUrl: String) {
-        let post: Dictionary<String, Any> = [
-            "caption": addCaption.text!,
-            "imageUrl": imageUrl,
-            "likes": 0 as NSNumber
+        let post: Dictionary<String, AnyObject> = [
+            "caption": addCaption.text! as AnyObject,
+            "imageUrl": imageUrl as AnyObject,
+            "likes": 0 as AnyObject
         ]
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
         firebasePost.setValue(post)
