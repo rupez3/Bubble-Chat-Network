@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -175,24 +175,24 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="5Dq-g8-cTI" customClass="CircleImageView" customModule="Bubble_Social_Networking" customModuleProvider="target">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <gestureRecognizers/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB3-BZ-vNd" customClass="CustomButton" customModule="Bubble_Social_Networking" customModuleProvider="target">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="UEd-Cf-5iB"/>
-                                            <constraint firstAttribute="height" constant="30" id="tSr-zS-2mX"/>
+                                            <constraint firstAttribute="height" constant="30" id="NMF-ik-7ns"/>
+                                            <constraint firstAttribute="width" constant="30" id="o3C-FN-I6h"/>
                                         </constraints>
+                                        <state key="normal" title="Button" image="sign-out"/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="UT2-jG-2dn" appends="YES" id="74L-KI-c5J"/>
+                                            <action selector="logoutAction:" destination="We9-oe-R8J" eventType="touchUpInside" id="Ifk-H7-1m2"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="GoToSignInVC" id="WPV-rP-D5f"/>
                                         </connections>
-                                    </imageView>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="5Dq-g8-cTI" firstAttribute="leading" secondItem="ZfF-ng-cZF" secondAttribute="leading" constant="8" id="BFC-Nl-b64"/>
+                                    <constraint firstItem="SB3-BZ-vNd" firstAttribute="top" secondItem="ZfF-ng-cZF" secondAttribute="top" constant="25" id="87T-4K-1m4"/>
                                     <constraint firstAttribute="height" constant="65" id="Idz-CC-xz3"/>
                                     <constraint firstItem="c3Y-04-60u" firstAttribute="centerX" secondItem="ZfF-ng-cZF" secondAttribute="centerX" id="JSN-oA-ZAM"/>
-                                    <constraint firstItem="5Dq-g8-cTI" firstAttribute="top" secondItem="ZfF-ng-cZF" secondAttribute="top" constant="26" id="LY9-2S-Tfg"/>
+                                    <constraint firstItem="SB3-BZ-vNd" firstAttribute="leading" secondItem="ZfF-ng-cZF" secondAttribute="leading" constant="8" id="gS1-zW-3e2"/>
                                     <constraint firstItem="c3Y-04-60u" firstAttribute="centerY" secondItem="ZfF-ng-cZF" secondAttribute="centerY" constant="8.25" id="mng-6e-YCe"/>
                                 </constraints>
                             </view>
@@ -223,6 +223,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="MWF-VX-gZZ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postButton:" destination="We9-oe-R8J" eventType="touchUpInside" id="cCD-HI-Ohr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -273,7 +276,9 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="w9F-Wo-mRJ"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w9F-Wo-mRJ">
+                                                                    <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                                </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-ny-bnZ">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -321,6 +326,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="fHy-ny-bnZ" id="Mnb-6q-W8e"/>
+                                            <outlet property="likeImage" destination="qDN-rm-VlZ" id="x2A-e7-EPb"/>
                                             <outlet property="likesLabel" destination="yeW-ZS-mB1" id="Jz2-Ja-fmR"/>
                                             <outlet property="postedImage" destination="w9F-Wo-mRJ" id="agp-wN-oF2"/>
                                             <outlet property="profileImage" destination="3pP-f8-eee" id="Rbz-P5-JYZ"/>
@@ -346,16 +352,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="FEEDS" id="lEu-fw-HNH"/>
                     <connections>
+                        <outlet property="addCaption" destination="1se-9N-xPl" id="DYw-lz-EvT"/>
                         <outlet property="addImageOutlet" destination="NSr-aG-8d1" id="tI7-1z-mcF"/>
                         <outlet property="myTableView" destination="LVS-GJ-zAl" id="ZKU-OO-ZIR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="su3-aS-EbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UT2-jG-2dn">
-                    <connections>
-                        <action selector="logoutAction:" destination="We9-oe-R8J" id="Pf9-lE-0tT"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UT2-jG-2dn"/>
                 <tapGestureRecognizer id="rGc-3e-i45">
                     <connections>
                         <action selector="addImageAction:" destination="We9-oe-R8J" id="Se8-DA-oT4"/>
@@ -390,7 +393,9 @@
         <image name="cersie" width="502" height="360"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="fbLogo" width="139" height="139"/>
-        <image name="flower" width="600" height="332"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WPV-rP-D5f"/>
+    </inferredMetricsTieBreakers>
 </document>
