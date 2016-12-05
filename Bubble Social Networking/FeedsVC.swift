@@ -53,14 +53,6 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
         })
         
     }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        
-//        self.tabBarController?.navigationItem.hidesBackButton = true
-        
-    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -79,12 +71,10 @@ class FeedsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
             
             if let img = FeedsVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configCell(post: post, image: img)
-                return cell
             } else {
                 cell.configCell(post: post)
-                return cell
             }
-            
+            return cell
         } else {
             return PostTableViewCell()
         }
