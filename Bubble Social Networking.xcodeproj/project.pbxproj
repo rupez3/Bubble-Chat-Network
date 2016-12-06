@@ -31,6 +31,9 @@
 		A594311C1DC806DF00F4F600 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A594311B1DC806DF00F4F600 /* PostModel.swift */; };
 		A59A7BDF1DC018DC008CFABC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59A7BDE1DC018DC008CFABC /* DataService.swift */; };
 		A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */; };
+		A5FF07D11DF6371E00BA968D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF07CE1DF6371E00BA968D /* CameraViewController.swift */; };
+		A5FF07D21DF6371E00BA968D /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF07CF1DF6371E00BA968D /* PhotoCaptureDelegate.swift */; };
+		A5FF07D31DF6371E00BA968D /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FF07D01DF6371E00BA968D /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		A59A7BDE1DC018DC008CFABC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A5BCC9EF1DBEC04700AD308C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		A5DAD4D41DB86FA900F55C0E /* Bubble Social Networking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bubble Social Networking.entitlements"; sourceTree = "<group>"; };
+		A5FF07CE1DF6371E00BA968D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A5FF07CF1DF6371E00BA968D /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		A5FF07D01DF6371E00BA968D /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		A6CDDFFD1AF88864AFEA18BE /* Pods-Bubble Social NetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social NetworkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social NetworkingUITests/Pods-Bubble Social NetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE68F9788A99FABE22BEE522 /* Pods-Bubble Social Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social Networking/Pods-Bubble Social Networking.release.xcconfig"; sourceTree = "<group>"; };
 		BB6BC6850CF1421D5B7F2A56 /* Pods-Bubble Social Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubble Social Networking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bubble Social Networking/Pods-Bubble Social Networking.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +202,9 @@
 		0688A0391DB5C129004E8911 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A5FF07CE1DF6371E00BA968D /* CameraViewController.swift */,
+				A5FF07CF1DF6371E00BA968D /* PhotoCaptureDelegate.swift */,
+				A5FF07D01DF6371E00BA968D /* PreviewView.swift */,
 				064375511DB837F00077744B /* CustomView.swift */,
 				064375561DB83EA70077744B /* CustomRoundButton.swift */,
 				064375581DB842360077744B /* CustomTextField.swift */,
@@ -532,13 +541,16 @@
 				A565DA141DB9BAD20013C543 /* MessagingVC.swift in Sources */,
 				A5BCC9F01DBEC04700AD308C /* PostTableViewCell.swift in Sources */,
 				A565DA0E1DB9BA8A0013C543 /* TabBarViewController.swift in Sources */,
+				A5FF07D21DF6371E00BA968D /* PhotoCaptureDelegate.swift in Sources */,
 				064375521DB837F00077744B /* CustomView.swift in Sources */,
 				0688A0091DB5C0C8004E8911 /* SigninVC.swift in Sources */,
 				A565DA101DB9BAA50013C543 /* NavigationViewController.swift in Sources */,
 				064375591DB842360077744B /* CustomTextField.swift in Sources */,
+				A5FF07D31DF6371E00BA968D /* PreviewView.swift in Sources */,
 				0688A0071DB5C0C8004E8911 /* AppDelegate.swift in Sources */,
 				A565DA121DB9BABA0013C543 /* FeedsVC.swift in Sources */,
 				0643755B1DB844AE0077744B /* CustomButton.swift in Sources */,
+				A5FF07D11DF6371E00BA968D /* CameraViewController.swift in Sources */,
 				064375571DB83EA70077744B /* CustomRoundButton.swift in Sources */,
 				064375551DB838520077744B /* Constants.swift in Sources */,
 			);
